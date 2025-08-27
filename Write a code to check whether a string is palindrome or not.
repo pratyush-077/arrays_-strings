@@ -1,0 +1,38 @@
+//EXPERIMENT 7
+//NAME: Pratyush Saha
+//PRN: 24070123078
+//Class: ENTC A3
+//Problem statement:- Write a code to check whether a string is palindrome or not.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string str1;
+    cout << "Enter the string:" << endl;
+    cin >> str1;
+
+    int len = str1.length();
+    int i;
+
+    for (i = 0; i < len / 2; i++) {
+        if (str1[i] != str1[len - i - 1]) {
+            break;  
+        }
+    }
+
+    if (i == len / 2) {
+        cout << str1 << " is a palindrome." << endl;
+    } else {
+        cout << str1 << " is not a palindrome." << endl;
+    }
+
+    return 0;
+}
+
+
+/*Output:-
+Enter the string:
+racecar
+racecar is a palindrome.
+*/
