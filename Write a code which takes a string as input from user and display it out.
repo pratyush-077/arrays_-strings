@@ -1,0 +1,24 @@
+//NAME: Pratyush Saha
+//PRN: 24070123078
+//Class: ENTC A3
+//Problem statement:- Write a code which takes a string as input from user and display it out.
+
+
+include <iostream>
+using namespace std;
+int main() {
+    cout<<"These are the  various ways in which we can display a string"<<endl;
+    string str1;
+    cout<<"Enter the string:"<<endl;
+    cin>>str1;
+    
+    cout<<str1<<endl;
+    return 0;
+}
+
+/*Output:-
+These are the  various ways in which we can display a string
+Enter the string:
+Palak
+Palak
+*/
