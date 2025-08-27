@@ -1,0 +1,35 @@
+//EXPERIMENT 7
+//NAME: Pratyush Saha
+//PRN: 24070123078
+//Class: ENTC A3
+//Problem statement:- Write a code to take input from user and store it in an array.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int marks[6];
+cout<<"The marks of student are:"<<endl;
+
+for(int i=0; i<6; i++){
+    cin>>marks[i];
+}
+
+for(int n=0; n<6; n++){
+    cout<<marks[n]<<" ";
+}
+
+   return 0;
+}
+
+/*output:-
+The marks of student are:
+99
+89
+78
+58
+68
+85
+99 89 78 58 68 85 
+*/
