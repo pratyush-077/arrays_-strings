@@ -1,0 +1,46 @@
+//Name: Pratyush Saha
+//PRN: 24070123078
+//Class: ENTC A3
+//Problem statement:- Write a code to find the maximum and minimum value in the array.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter " << n << " elements:" << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int max = arr[0];
+    int min = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    cout << "Maximum element is: " << max << endl;
+    cout << "Minimum element is: " << min << endl;
+
+    return 0;
+}
+
+
+/*output;-
+Enter number of elements: 6
+Enter 6 elements:
+12 65 2 78 90 34
+Maximum element is: 90
+Minimum element is: 2
+*/
