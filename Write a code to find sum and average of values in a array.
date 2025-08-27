@@ -1,0 +1,51 @@
+//EXPERIMENT 7
+//NAME:Pratyush Saha
+//PRN: 24070123078
+//Class: ENTC A3
+//Problem statement:- Write a code to find sum and average of values in a array.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int arr[6];
+int sum;
+float average;
+cout<<"The numbers of array are:"<<endl;
+
+for(int i=0; i<6; i++){
+    cin>>arr[i];
+}
+
+for(int n=0; n<6; n++){
+    cout<<arr[n]<<" ";
+}
+cout<<"\nThe sum of elements of array are:"<<endl;
+for(int i=0; i<6; i++){
+    sum+=arr[i];
+}
+cout<<sum;
+average=(sum)/6;
+cout<<"\nThe average of elements of array are:"<<endl;
+cout<<average;
+
+   return 0;
+}
+
+
+/*Output:-
+
+The numbers of array are:
+12
+24
+21
+28
+32
+20
+12 24 21 28 32 20 
+The sum of elements of array are:
+137
+The average of elements of array are:
+22
+*/
